@@ -1,6 +1,6 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import Message from "./Message";
-import { describe, it, expect, beforeEach } from "vitest";
+// import { describe, it, expect, beforeEach } from "vitest";
 
 beforeEach(cleanup);
 
@@ -23,5 +23,5 @@ describe(
       expect(messageElement.innerHTML).toBe("<b>test</b> abc");
     });
   },
-  { repeats: 200 }
+  { repeats: 500 }
 );

@@ -5,7 +5,7 @@ const dompurify = DOMPurify();
 const SystemMessage = ({ text }: { text: string }) => {
   return (
     <div
-      // data-testid="message"
+      data-testid="message"
       dangerouslySetInnerHTML={{ __html: dompurify.sanitize(text) }}
     />
   );
